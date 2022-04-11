@@ -15,8 +15,6 @@ public class HelloApplication extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-       // scene.getStylesheets().add(
-          //      this.getClass().getResource("application.css").toExternalForm());
         Label a= new Label("password:");
         GridPane.setConstraints(a,0,1);
         stage.setTitle("Hello!");
