@@ -1,0 +1,7 @@
+#jakubek {
+-fx-background-color: lime;
+}
+#jakubek:hover {
+-fx-background-color: orange;
+}
+
