@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projekt.HelloController">
+   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1400.0" style="-fx-background-color: azure;">
+
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="765.4" minWidth="10.0" prefWidth="594.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="1582.399969482422" minWidth="10.0" prefWidth="789.5999999999999" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="536.5999999999999" minWidth="9.200000000000045" prefWidth="536.5999999999999" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="943.999997138977" minHeight="10.0" prefHeight="778.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+         <GridPane fx:id="GridPlansza" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="750.0" style="-fx-border-style: solid;" GridPane.columnIndex="1">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="dragi" accessibleRole="TEXT_FIELD" accessibleText="AB" onDragOver="#przeciag" onMouseDragged="#przesun" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: red;">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text fx:id="tekst" layoutX="13.0" layoutY="25.0" onMouseClicked="#testaa" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="po" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: lime;" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="lols" onMouseClicked="#kubus" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11">
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding>
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="drej" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="kuba" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text fx:id="qwe" layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8" AnchorPane.bottomAnchor="19.98828125" AnchorPane.rightAnchor="21.122265624999997" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text fx:id="point2" layoutX="13.0" layoutY="25.0" onMouseClicked="#change" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text fx:id="lol" layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane fx:id="jakubek" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="4" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8" />
+                  </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="4" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane onMouseClicked="#zdjecieKub" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="3" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="2" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="40.0" prefWidth="49.0" style="-fx-background-color: lime;" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="haha" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="5" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="6" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane fx:id="one" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="7" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text fx:id="one1" layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text fx:id="point1" layoutX="13.0" layoutY="25.0" onMouseClicked="#take" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="7" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="7" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="12" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="13" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="11" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="14" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="12" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="13" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="12" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightsalmon;" GridPane.columnIndex="11" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="10" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="10" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="11" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="11" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="10" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="9" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="8" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+1" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="14" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+                  <children>
+                     <Text layoutX="13.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+5" />
+                  </children></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin></AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="8">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="10">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="8" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="11">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="12">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="14" GridPane.rowIndex="13">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="9" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="10" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="11" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="12" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lime;" GridPane.columnIndex="13" GridPane.rowIndex="14">
+                  <GridPane.margin>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  </GridPane.margin>
+               </AnchorPane>
+               <AnchorPane fx:id="pierwsze" onMouseClicked="#zdjecie" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+               <AnchorPane fx:id="drugie" onMouseClicked="#zdjeciee" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+               <AnchorPane fx:id="trzecie" onMouseClicked="#zdjecieee" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+               <AnchorPane fx:id="czwarte" onMouseClicked="#zdjecie4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+               <AnchorPane fx:id="piate" onMouseClicked="#zdjecie5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+               <AnchorPane fx:id="szoste" onMouseClicked="#zdjecie6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+               <Button fx:id="losujemyxd" mnemonicParsing="false" onMouseClicked="#losujemy" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: yellow;" text="LOS" textFill="WHITE" textOverrun="CLIP" GridPane.rowIndex="16">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font></Button>
+               <AnchorPane fx:id="siedem" onMouseClicked="#zdjecie7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="8" GridPane.rowIndex="16" />
+               <AnchorPane fx:id="osiem" onMouseClicked="#zdjecie8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" GridPane.columnIndex="9" GridPane.rowIndex="16" />
+            </children>
+         </GridPane>
+         <GridPane fx:id="mainPane">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+               <Button fx:id="button_one" mnemonicParsing="false" onMouseClicked="#wynik" style="-fx-background-color: GREEN;" text="ZATWIERDZ SŁOWO" textFill="#000000ed" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <font>
+                     <Font name="Arial Bold" size="18.0" />
+                  </font></Button>
+               <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1">
+                  <items>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <children>
+                           <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="154.0" prefWidth="296.0">
+                              <items>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo1" layoutX="13.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="158.0">
+                                    <children>
+                                       <Text fx:id="slowo2" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                              </items>
+                           </SplitPane>
+                        </children>
+                     </AnchorPane>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <children>
+                           <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="154.0" prefWidth="298.0">
+                              <items>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo3" layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font name="Arial" size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo4" layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font name="Arial" size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                              </items>
+                           </SplitPane>
+                        </children>
+                     </AnchorPane>
+                  </items>
+               </SplitPane>
+               <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <items>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <children>
+                           <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="154.0" prefWidth="296.0">
+                              <items>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo5" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo6" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                              </items>
+                           </SplitPane>
+                        </children>
+                     </AnchorPane>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <children>
+                           <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="154.0" prefWidth="298.0">
+                              <items>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo7" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                       <Text fx:id="slowo8" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                          <font>
+                                             <Font name="Arial" size="21.0" />
+                                          </font>
+                                       </Text>
+                                    </children>
+                                 </AnchorPane>
+                              </items>
+                           </SplitPane>
+                        </children>
+                     </AnchorPane>
+                  </items>
+               </SplitPane>
+            </children>
+         </GridPane>
+      </children>
+      <stylesheets>
+         <URL value="@style.css" />
+      </stylesheets>
+   </GridPane>
+</HBox>
